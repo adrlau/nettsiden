@@ -97,6 +97,9 @@ $imageTemplate = '
                 $unamepair = explode(":", $unamepair);
                 if ($unamepair[0] == $imguser) {
                     $realname = $unamepair[1];
+                    if ($realname == "Ukjent") {
+			$realname = $name
+		    }
                     break;
                 }
             }
